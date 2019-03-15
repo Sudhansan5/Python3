@@ -1,0 +1,21 @@
+t=int(input())
+while(t>0):
+    n=int(input())
+    b=[];c=[]
+    a=list(map(int,input().split()))
+    for i in a:
+        if(i>0):
+            b.append(i)
+        else:
+            c.append(i)
+    b1=len(b)
+    c1=len(c)
+    if(b1==0):
+        print(c1,c1)
+    elif(len(c)==0):
+        print(b1,b1)
+    elif(b1>=c1):
+        print(b1,c1)
+    elif(c1>b1):
+        print(c1,b1)
+    t-=1
